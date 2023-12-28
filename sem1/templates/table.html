@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+</head>
+<body>
+<table border="1">
+  <tr>
+    <td><p>Имя</p></td>
+    <td><p>Фамилия</p></td>
+    <td><p>Возраст</p></td>
+    <td><p>Средний балл</p></td>  </tr>
+    {% for user in users %}
+    <tr>
+      <td>{{ user.name }}</td>
+      <td>{{ user.second_name }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.avg_score }}</td>
+      </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Форма для POST запроса</title>
+</head>
+<body>
+<form action="{{ url_for('submit') }}" method="post">
+<input type="text" name="login" placeholder="login">
+  <input type="password" name="password" placeholder="password">
+<input type="submit" value="Отправить">
+</form>
+</body>
+</html>
