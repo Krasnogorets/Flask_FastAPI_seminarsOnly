@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+<div class="row">
+{% for student in students %}
+<p class="col-12 col-md-6">Имя : {{
+student.name }}<br>Фамилия: {{
+student.second_name }}<br>Отчество: {{
+student.third_name }}<br>
+Email пользователя: {{ student.email }}<br>  {{
+student.rates }}
+    <br>
+
+
+</p>
+{% endfor %}
+</div>
+{% endblock %}
